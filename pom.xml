@@ -5,7 +5,7 @@
     <artifactId>ProyectoFrameworksCentral</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>cursoNTecnologias</groupId>
+  <groupId>ProyectoFrameworksServicios</groupId>
   <artifactId>ProyectoFrameworksServicios</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
