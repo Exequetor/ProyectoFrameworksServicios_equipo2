@@ -2,16 +2,16 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>cursoNTecnologias</groupId>
-    <artifactId>ProyectoFrameworksCentral</artifactId>
+    <artifactId>ProyectoFrameworksCentral_equipo2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>ProyectoFrameworksServicios</groupId>
-  <artifactId>ProyectoFrameworksServicios</artifactId>
+  <groupId>ProyectoFrameworksServicios_equipo2</groupId>
+  <artifactId>ProyectoFrameworksServicios_equipo2</artifactId>
   
   <dependencies>
   	<dependency>
-  		<groupId>ProyectoFrameworksPersistencia</groupId>
-  		<artifactId>ProyectoFrameworksPersistencia</artifactId>
+  		<groupId>ProyectoFrameworksPersistencia_equipo2</groupId>
+  		<artifactId>ProyectoFrameworksPersistencia_equipo2</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	<dependency>
