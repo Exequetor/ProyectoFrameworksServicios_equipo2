@@ -1,4 +1,4 @@
-package cursoNTecnologias.service.productos;
+package cursoNTecnologias.service;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import cursoNTecnologias.bd.domain.Productos;
+import cursoNTecnologias.service.productos.ProductosServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"/applicationContext.xml"})
