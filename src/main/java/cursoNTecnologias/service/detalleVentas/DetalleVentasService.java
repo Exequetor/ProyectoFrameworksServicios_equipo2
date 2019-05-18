@@ -8,8 +8,8 @@ public interface DetalleVentasService {
 	/**
 	 * Consultas
 	 */
-	public List<DetalleVentas> queryAllDetalleVentas();
-	public List<DetalleVentas> queryDetalleVentasByVentaId(Integer id);
+	public List<DetalleVentas> queryAllDetalleVentasProductos();
+	public List<DetalleVentas> queryDetalleVentasProductosByVentaId(Integer id);
 	
 	/**
 	 * Insert
@@ -24,5 +24,5 @@ public interface DetalleVentasService {
 	/**
 	 * Delete
 	 */
-	public void deleteDetalleVentasByVentasId(Integer ventasId);
+	public void deleteDetalleVentasByVentaId(Integer ventasId);
 }
