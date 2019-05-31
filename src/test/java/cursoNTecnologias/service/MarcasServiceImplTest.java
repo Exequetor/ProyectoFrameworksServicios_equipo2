@@ -1,4 +1,4 @@
-package cursoNTecnologias.service.marcas;
+package cursoNTecnologias.service;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import cursoNTecnologias.bd.domain.Marcas;
+import cursoNTecnologias.service.marcas.MarcasServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"/applicationContext.xml"})
@@ -19,7 +20,6 @@ public class MarcasServiceImplTest {
 	
 	@Inject 
 	MarcasServiceImpl marcaService;
-	
 	
 	public void pruebaMostrarMarcas(){
 		try{

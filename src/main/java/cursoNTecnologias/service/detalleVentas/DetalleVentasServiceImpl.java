@@ -17,27 +17,29 @@ public class DetalleVentasServiceImpl implements DetalleVentasService, Serializa
 	@Inject
 	DetalleVentasDao detalleVentasDao;
 	
-	public List<DetalleVentas> queryAllDetalleVentas() {
+	@Override
+	public List<DetalleVentas> queryAllDetalleVentasProductos() {
 		return detalleVentasDao.queryAllDetalleVentasProductos();
 	}
 
-	public List<DetalleVentas> queryDetalleVentasByVentaId(Integer id) {
+	@Override
+	public List<DetalleVentas> queryDetalleVentasProductosByVentaId(Integer id) {
 		return detalleVentasDao.queryDetalleVentasProductosByVentaId(id);
 	}
 
+	@Override
 	public void insertDetalleVentas(DetalleVentas dventas) {
-		// TODO Auto-generated method stub
-		
+		detalleVentasDao.insertDetalleVentas(dventas);
 	}
 
+	@Override
 	public void updateDetalleVentas(DetalleVentas dventas) {
-		// TODO Auto-generated method stub
-		
+		detalleVentasDao.updateDetalleVentas(dventas);
 	}
 
-	public void deleteDetalleVentasByVentasId(Integer ventasId) {
-		// TODO Auto-generated method stub
-		
+	@Override
+	public void deleteDetalleVentasByVentaId(Integer ventasId) {
+		detalleVentasDao.deleteDetalleVentasByVentaId(ventasId);
 	}
 
 }
