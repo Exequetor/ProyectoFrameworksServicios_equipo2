@@ -11,7 +11,7 @@ import cursoNTecnologias.bd.domain.Marcas;
 import cursoNTecnologias.bd.domain.Productos;
 
 @Named
-public class MarcasServiceImpl {
+public class MarcasServiceImpl implements MarcasService{
 	
 	@Inject
 	MarcasDao marcaDao;
@@ -28,5 +28,23 @@ public class MarcasServiceImpl {
 	}
 	public void updateMarca(Marcas m){
 		marcaDao.updateMarca(m);
+	}
+
+	@Override
+	public Marcas obtenerMarcaId(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Marcas> obtenerTodasMarca() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void agregarMarca(Marcas m) {
+		// TODO Auto-generated method stub
+		
 	}
 }
