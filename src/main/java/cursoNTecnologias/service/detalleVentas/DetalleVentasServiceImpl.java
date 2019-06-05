@@ -17,27 +17,27 @@ public class DetalleVentasServiceImpl implements DetalleVentasService, Serializa
 	@Inject
 	DetalleVentasDao detalleVentasDao;
 	
-	@Override
+	
 	public List<DetalleVentas> queryAllDetalleVentasProductos() {
 		return detalleVentasDao.queryAllDetalleVentasProductos();
 	}
 
-	@Override
+
 	public List<DetalleVentas> queryDetalleVentasProductosByVentaId(Integer id) {
 		return detalleVentasDao.queryDetalleVentasProductosByVentaId(id);
 	}
 
-	@Override
+	
 	public void insertDetalleVentas(DetalleVentas dventas) {
 		detalleVentasDao.insertDetalleVentas(dventas);
 	}
 
-	@Override
+
 	public void updateDetalleVentas(DetalleVentas dventas) {
 		detalleVentasDao.updateDetalleVentas(dventas);
 	}
 
-	@Override
+	
 	public void deleteDetalleVentasByVentaId(Integer ventasId) {
 		detalleVentasDao.deleteDetalleVentasByVentaId(ventasId);
 	}
