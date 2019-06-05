@@ -10,12 +10,13 @@ import cursoNTecnologias.bd.mappers.ProductosMapper;
 import cursoNTecnologias.bd.ProductosDao.ProductosDao;
 
 @Named
-public class ProductosServiceImpl {
+public class ProductosServiceImpl implements ProductosService{
 	
 	@Inject
 	ProductosDao productoDao;
 	
 	public List<Productos> listarProductos(){
+		System.out.println("Service impl");
 		return productoDao.listarProductos();
 	}
 	

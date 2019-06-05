@@ -21,7 +21,7 @@ public class ProductosServiceImplTest {
 	@Inject 
 	ProductosServiceImpl productoService;
 	
-	
+	@Test
 	public void pruebaMostrarProductos(){
 		try{
 			List<Productos> lista= productoService.listarProductos();
@@ -75,7 +75,7 @@ public class ProductosServiceImplTest {
 			System.out.println("Error: " + ex);
 		}
 	}
-	@Test
+	
 	public void agregaProductoNuevo(){
 		try{
 			System.out.println("Agregando un nuevo producto");
