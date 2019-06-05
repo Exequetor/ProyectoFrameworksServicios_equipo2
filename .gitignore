@@ -1,2 +1,4 @@
 /target/
 /bin/
+.classpath
+.settings/org.eclipse.wst.validation.prefs
