@@ -1,5 +1,6 @@
 package cursoNTecnologias.service.marcas;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -30,10 +31,10 @@ public class MarcasServiceImpl implements MarcasService{
 		marcaDao.updateMarca(m);
 	}
 
-	@Override
-	public Marcas obtenerMarcaId(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Marcas obtenerMarcaPorId(Integer idMarca) {
+		java.util.Map<String, Integer> mapMarca = new HashMap<>();
+		mapMarca.put("idMarca", idMarca);
+		return marcaDao.obtenerMarcaPorId(mapMarca);
 	}
 
 	@Override
@@ -46,5 +47,12 @@ public class MarcasServiceImpl implements MarcasService{
 	public void agregarMarca(Marcas m) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public Marcas obtenerMarcaId(Integer idMarca) {
+		java.util.Map<String, Integer> mapMarca = new HashMap<>();
+		mapMarca.put("idMarca", idMarca);
+		return marcaDao.obtenerMarcaPorId(mapMarca);
 	}
 }
