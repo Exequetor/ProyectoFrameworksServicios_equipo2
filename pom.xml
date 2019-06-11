@@ -8,6 +8,10 @@
   <groupId>ProyectoFrameworksServicios_equipo2</groupId>
   <artifactId>ProyectoFrameworksServicios_equipo2</artifactId>
   
+  <url>http://maven.apache.org</url>
+  <properties>
+  		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <dependencies>
   	<dependency>
   		<groupId>ProyectoFrameworksPersistencia_equipo2</groupId>

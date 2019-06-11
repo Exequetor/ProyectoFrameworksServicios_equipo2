@@ -10,8 +10,8 @@ public interface VentasService {
 	 * Consultas
 	 */
 	public List<Ventas> queryAllVentas();
-	public List<Ventas> queryVentaByVentaId();
-	public List<Ventas> queryVentasByClienteId();
+	public List<Ventas> queryVentasByVentaId(Integer id);
+	public List<Ventas> queryVentasByClienteId(Integer id);
 	
 	/**
 	 * Insert
@@ -21,10 +21,10 @@ public interface VentasService {
 	/**
 	 * Update
 	 */
-	public void updateVenta(Ventas ventas);
+	public void updateVenta(Ventas venta);
 	
 	/**
 	 * Delete
 	 */
-	public void deleteVentaByVentaId(Integer ventasId);
+	public void deleteVenta(Integer ventaId);
 }

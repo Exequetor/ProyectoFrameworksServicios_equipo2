@@ -20,19 +20,16 @@ public class VentasServiceImpl implements VentasService, Serializable{
 	
 	@Override
 	public List<Ventas> queryAllVentas() {
-		// TODO Auto-generated method stub
-		return null;
+		return ventasDao.queryAllVentas();
 	}
 
 	@Override
-	public List<Ventas> queryVentaByVentaId() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Ventas> queryVentasByVentaId(Integer id) {
+		return ventasDao.queryVentasByVentaId(id);
 	}
 
-	public List<Ventas> queryVentasByClienteId() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Ventas> queryVentasByClienteId(Integer id) {
+		return ventasDao.queryVentasByClienteId(id);
 	}
 
 	@Override
@@ -41,14 +38,13 @@ public class VentasServiceImpl implements VentasService, Serializable{
 	}
 
 	@Override
-	public void updateVenta(Ventas ventas) {
-		// TODO Auto-generated method stub
-		
+	public void updateVenta(Ventas venta) {
+		ventasDao.updateVentas(venta);
 	}
 
 	@Override
-	public void deleteVentaByVentaId(Integer ventasId) {
-		// TODO Auto-generated method stub
+	public void deleteVenta(Integer ventaId) {
+		ventasDao.deleteVentasByVentasId(ventaId);
 	}
 
 }
