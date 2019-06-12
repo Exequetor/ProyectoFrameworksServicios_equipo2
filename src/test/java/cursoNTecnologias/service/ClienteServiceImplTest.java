@@ -20,7 +20,7 @@ public class ClienteServiceImplTest {
 	@Inject
 	ClienteService clienteService;
 	
-	@Ignore
+	@Test
 	public void listarTodosClientes (){
 		try{
 			List<Cliente> lista = clienteService.listarTodosClientes();
