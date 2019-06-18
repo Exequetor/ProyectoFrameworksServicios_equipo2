@@ -22,9 +22,6 @@ public class ClienteServiceImpl implements ClienteService, Serializable {
 	private static final long serialVersionUID = 1L;
 	@Inject
 	ClienteDao clienteDao;
-	@Inject
-	DireccionDao direccionDao;
-	
 
 	public List<Cliente> listarTodosClientes() {
 		return clienteDao.listarTodosClientes();
