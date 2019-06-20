@@ -33,7 +33,7 @@ public class MarcasServiceImpl implements MarcasService{
 
 	public Marcas obtenerMarcaPorId(Integer idMarca) {
 		java.util.Map<String, Integer> mapMarca = new HashMap<>();
-		mapMarca.put("idMarca", idMarca);
+		mapMarca.put("idmarca", idMarca);
 		return marcaDao.obtenerMarcaPorId(mapMarca);
 	}
 
