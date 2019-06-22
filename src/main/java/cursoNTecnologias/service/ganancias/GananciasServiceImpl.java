@@ -3,35 +3,42 @@ package cursoNTecnologias.service.ganancias;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import cursoNTecnologias.bd.GananciasDao.GananciasDao;
 import cursoNTecnologias.bd.domain.Ganancias;
 
+@Named
 public class GananciasServiceImpl implements GananciasService, Serializable{
 
 	private static final long serialVersionUID = 1611811112640737680L;
-
+	@Inject
+	GananciasDao dao;
+	
+	@Override
 	public List<Ganancias> queryAllGanancias() {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.queryAllGanancias();
 	}
 
-	public List<Ganancias> queryGananciasByVentaId() {
-		// TODO Auto-generated method stub
-		return null;
+	@Override
+	public List<Ganancias> queryGananciasByVentaId(Integer id) {
+		return dao.queryGananciasByVentaId(id);
 	}
 
-	public void insertGanancias(Ganancias ganancia) {
-		// TODO Auto-generated method stub
-		
+	@Override
+	public void insertGanancia(Ganancias ganancia) {
+		dao.insertGanancia(ganancia);
 	}
 
-	public void updateGanancias(Ganancias ganancia) {
-		// TODO Auto-generated method stub
-		
+	@Override
+	public void updateGanancia(Ganancias ganancia) {
+		dao.updateGanancia(ganancia);
 	}
 
-	public void deleteGananciasByGananciasId(Integer gananciaId) {
-		// TODO Auto-generated method stub
-		
+	@Override
+	public void deleteGanancia(Integer id) {
+		dao.deleteGanancia(id);
 	}
 
 }

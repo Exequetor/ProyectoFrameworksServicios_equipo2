@@ -28,6 +28,7 @@ public class VentasServiceImpl implements VentasService, Serializable{
 		return ventasDao.queryVentasByVentaId(id);
 	}
 
+	@Override
 	public List<Ventas> queryVentasByClienteId(Integer id) {
 		return ventasDao.queryVentasByClienteId(id);
 	}
